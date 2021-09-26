@@ -1,5 +1,5 @@
 "use strict";
-let a = 55;
+let a = 5;
 console.log(a);
 
 let b = "";
