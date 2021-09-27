@@ -18,3 +18,8 @@ for (let chiave in persona) {
 for (let [c, v] of Object.entries(persona)) {
     console.log(`${c}-> ${v}`)
 }
+
+// 2° metodo "for of": applicabile sugli array / con Object.Keys si iterano solo le chiavi
+for ( let c of Object.keys(persona)) {
+    console.log(c)
+}
