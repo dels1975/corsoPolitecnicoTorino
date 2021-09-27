@@ -28,11 +28,26 @@ minScore = Math.min(...betterScore);
 index = betterScore.indexOf(minScore);
 betterScore.splice(index, 1);
 
- */
+*/
 
+// soluzione 2 - soluzione con ordinamento dei voti
 // la sort ordina di default in modo alfabetico
 // ordinamento numerico richiede una funzione
-score.sort((a, b) => a - b);
+// score.sort((a, b) => a - b);
 betterScore.sort((a, b) => a - b);
+betterScore.shift();
+betterScore.shift();
 
-console.log(betterScore);
+let avg = 0;
+
+for (let el of betterScore) {
+  avg += el;
+}
+
+avg /= betterScore.length;
+avg = Math.round(avg);
+
+console.log(
+  `I voti iniziali sono: ${score}
+I voti migliorati sono: ${betterScore}, la media voti migliorata è: ${avg}`
+);
