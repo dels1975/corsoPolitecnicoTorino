@@ -10,7 +10,8 @@ const persona = {
 
 // 1° metodo "for in": applicabile sugli oggetti
 for (let chiave in persona) {
-  // console.log(persona.chiave); con la dot notation non funziona!!
+  // console.log(persona.chiave); con la dot notation non funziona perchè:
+  // solo nella bracket notation si possono richiamare le proprietà como variabili, senza inserimento delle ""!!
   console.log(`${chiave}: ${persona[chiave]}`);
 }
 
