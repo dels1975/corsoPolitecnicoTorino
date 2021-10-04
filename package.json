@@ -1,0 +1,25 @@
+{
+  "name": "corsopolitecnicotorino",
+  "version": "1.0.0",
+  "description": "esercizi corso Politecnico di Torino",
+  "main": "esercizio_3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dels1975/corsoPolitecnicoTorino.git"
+  },
+  "keywords": [
+    "esercizi"
+  ],
+  "author": "Salvatore De Luca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dels1975/corsoPolitecnicoTorino/issues"
+  },
+  "homepage": "https://github.com/dels1975/corsoPolitecnicoTorino#readme",
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  }
+}
