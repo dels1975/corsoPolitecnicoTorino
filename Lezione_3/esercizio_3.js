@@ -31,17 +31,34 @@ function ExamList() {
 
   //find
   this.find = (code) => {
-    for (const c of this.list) {
+    /*     for (const c of this.list) {
       if (c.code === code);
       return c;
     }
     return undefined;
+ */
+    // il metodo filter restituisce un array - visto che noi sappiamo che il risultato è uno solo occorre inserire l'indice dell'array [0]
+    return this.list.filter((course) => course.code === code)[0];
   };
 
   //listByDate
   this.listByDate = () => {
-    // creiamo una copia della list con l'operatore di spread [...this.list]
+    // creiamo una copia della list con l'operatore di spread [...this.list] per non modificare l'array di partenza
+    return [...this.list].sort((a, b) => b.score - a.score);
+  };
+
+  // listByScore
+  this.listByScore = () => {
+    // creiamo una copia della list con l'operatore di spread [...this.list] per non modificare l'array di partenza
     return [...this.list].sort((a, b) => (a.date.isAfter(b.date) ? 1 : -1));
+  };
+
+  // average
+  this.average = () => {
+    return (
+      this.list.reduce((avg, course) => avg + course.score, 0) /
+      this.list.length
+    );
   };
 }
 
@@ -74,4 +91,4 @@ exams.add(sw);
 // console.log(exams.find("x1abc"));
 
 const orderList = exams.listByDate();
-console.log(orderList);
+console.log(exams.average());
