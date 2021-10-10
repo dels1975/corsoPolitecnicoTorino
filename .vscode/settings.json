@@ -1,11 +1,4 @@
 {
-  "sqltools.connections": [
-    {
-      "previewLimit": 50,
-      "driver": "SQLite",
-      "name": "corse",
-      "database": "${workspaceFolder:corsoPolitecnicoTorino}/exams.sqlite"
-    }
-  ],
+  "sqltools.connections": [],
   "sqltools.useNodeRuntime": true
 }
