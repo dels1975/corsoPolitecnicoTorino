@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dels1975/corsoPolitecnicoTorino#readme",
   "dependencies": {
-    "dayjs": "^1.10.7"
+    "dayjs": "^1.10.7",
+    "sqlite3": "^5.0.2"
   }
 }
