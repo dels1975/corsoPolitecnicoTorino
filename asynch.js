@@ -18,13 +18,3 @@ let sql2 =
 db.get(sql2, ["01NYHOV"], (err, row) => {
   console.log(row);
 });
-
-getRepoInfo
-  .then((repo) => getIssue(repo))
-  .then((issue) => getOwner(issue.ownerId))
-  .then((owner) => sendEmail(owner.email, "Some text"))
-  .catch((e) => {
-    // just log the error
-    console.error(e);
-  })
-  .finally((_) => logAction());
