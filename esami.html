@@ -17,6 +17,26 @@
     <meta name="description" content="Esami" />
 
     <title>Esami</title>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script
+      async
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- dayjs -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script defer src="app.js"></script>
   </head>
   <body>
     <header>
@@ -28,13 +48,20 @@
     <main class="container-fluid">
       <div class="row">
         <p class="col">
-          La tabella seguente riassume gli esami che ho sostenuto al<a
+          La tabella seguente riassume gli esami che ho sostenuto nel 2021 al<a
             href="https://www.polito.it"
             title="Vai al sito del Politecnico"
           >
             Politecnico di Torino</a
-          >
+          >, nella laurea magistrale in Ingegneria Informatica
         </p>
+      </div>
+
+      <div class="row">
+        <div class="mx-auto mb-3">
+          <button class="btn btn-primary" id="filter-2021">Mostra 2021</button>
+          <button class="btn btn-primary" id="filter-all">Mostra tutto</button>
+        </div>
       </div>
 
       <div class="row">
@@ -49,7 +76,8 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody id="exam-table">
+            <!-- 
             <tr>
               <td>01/02/2021</td>
               <td>Architetture dei sistemi di elaborazione</td>
@@ -71,24 +99,21 @@
               <td>30L</td>
               <td><button class="btn btn-danger">X</button></td>
             </tr>
+            -->
+            <tr>
+              <td><input class="form-control" type="date" /></td>
+              <td><input class="form-control" type="text" /></td>
+              <td><input class="form-control" type="text" /></td>
+              <td><input class="form-control" type="text" /></td>
+              <td><button class="btn btn-success">+</button></td>
+            </tr>
           </tbody>
         </table>
       </div>
     </main>
+
     <footer>
       <p>&copy; 2021 Applicazioni Web I (A-N)</p>
     </footer>
-
-    <!-- BOOTSTRAP JAVASCRIPT -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
