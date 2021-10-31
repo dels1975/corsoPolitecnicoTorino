@@ -1,0 +1,4 @@
+tbody > tr:first-child {
+  background-color: brown !important;
+  color: cornsilk !important;
+}
