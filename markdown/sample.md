@@ -113,9 +113,9 @@ Questa è un unica citazione con testo a capo:
 
  Nome | Cognome | Età
  :---:|---|---:
- Salvatore | De Luca | 45 
- Rita | Ruggieri | 42 
- Giulia | De Luca | 12 
+ Salvatore | De Luca | 45
+ Rita | Ruggieri | 42
+ Giulia | De Luca | 12
  Elena | De Luca | 6
 
 ## Immagini
