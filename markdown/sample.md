@@ -128,6 +128,15 @@ Questa è un unica citazione con testo a capo:
 
 ![Alt text][immagine]
 
-Notazione: non funziona -> hbhvlubjkbjkò, [^1] kjbkbibb [^bignote]
+[testo a piacere]: <> (This is also a comment.)
+[comment]: <> (This is a comment, it will not be included)
+[comment]: <> (in  the output file unless you use it in)
+[comment]: <> (a reference style link.)
+<!-- hkhuhoo -->
+[//]: # (This may be the most platform independent comment)
+
+Notazione: interpretato solo su GitHub -> notazioni, [^1] vedi sotto [^bignote]
 
 [^1]: This is the footnote🚀.
+
+[^bignote]: This is the footnote🚀.
