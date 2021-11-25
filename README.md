@@ -6,3 +6,7 @@ per verificare se sono stati effettuati commit sul repository remoto:
 
 git remote update
 git status
+
+git diff master origin // per vedere le differenza
+return per scendere le righe
+Per uscire dal terminale premere q 
