@@ -11,6 +11,8 @@ let corsi = listaCorsi.split(","); // restituisce un array
 
 // togliere gli eventuali spazi bianchi prima e dopo ogni nome di corso
 for (const [i, c] of corsi.entries()) {
+  // -> const [i, c]: assegnamento di destrutturazione; “destruttura” copiando gli elementi all’interno di variabili.
+  // L’array in sé non viene modificato.
   // i di indice - c di corsi
   // corsi.entries restituisce le coppie chiave/valore dell'array
   corsi[i] = c.trim();
@@ -36,6 +38,8 @@ for (const c of corsi) {
 const output = [];
 
 for (const [i, a] of acronimi.entries()) {
+  // -> const [i, a]: assegnamento di destrutturazione; “destruttura” copiando gli elementi all’interno di variabili.
+  // L’array in sé non viene modificato.
   output.push(`${a} - ${corsi[i]}`);
 }
 
