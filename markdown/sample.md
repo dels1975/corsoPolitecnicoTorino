@@ -59,7 +59,7 @@ $$\int f(x)$$
 
 ## Formattazione del testo
 
-la form acorsiva: _testo in corsivo con underscore_
+la form corsiva: _testo in corsivo con underscore_
 
 la forma corsiva: _testo in corsivo con asterisco_
 
