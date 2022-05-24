@@ -61,23 +61,23 @@ $$\int f(x)$$
 
 la form acorsiva: _testo in corsivo con underscore_
 
-la forma corsiva: *testo in corsivo con asterisco*
+la forma corsiva: _testo in corsivo con asterisco_
 
 la forma grassetto: __testo in grassetto__
 
-la forma grassetto: **testo in grassetto**
+la forma grassetto: __testo in grassetto__
 
-la forma corsivo-grassetto: ***testo in grassetto***
+la forma corsivo-grassetto: *__testo in grassetto__*
 
 la forma corsivo-grassetto: ___testo in grassetto___
 
 la forma corsivo-grassetto: **_testo in grassetto_**
 
-la forma corsivo-grassetto: __*testo in grassetto*__
+la forma corsivo-grassetto: ___testo in grassetto___
 
 la forma corsivo-grassetto: *__testo in grassetto__*
 
-la forma corsivo-grassetto: _**testo in grassetto**_
+la forma corsivo-grassetto: ___testo in grassetto___
 
 la forma barrata: ~~testo barrato~~
 
